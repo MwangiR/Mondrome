@@ -12,6 +12,51 @@
       <header>
         <h1>Password Generator</h1>
       </header>
+      <section id="optionsTable">
+        <article>
+          <table class="sticky-table-column">
+            <thead>
+              <tr>
+                <th class="sticky-table-column__sticky">Password Length</th>
+                <th class="sticky-table-column__sticky">Characters</th>
+                <th class="sticky-table-column__sticky">Lowercase</th>
+                <th class="sticky-table-column__sticky">Uppercase</th>
+                <th class="sticky-table-column__sticky">Numbers</th>
+                <th class="sticky-table-column__sticky">Symbols</th>
+                <!-- Other header column ... -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="sticky-table-column__sticky">
+                  <div class="slidecontainer">
+                    <input type="range" min="8" max="128" value="50" class="slider" id="myRange" />
+                    <p>Value: <span id="demo"></span></p>
+                  </div>
+                </td>
+                <td class="sticky-table-column__sticky">...</td>
+                <td class="sticky-table-column__sticky">
+                  <input type="checkbox" id="lowercase" />
+                  <label for="lowercase">Lowercase</label>
+                </td>
+                <td class="sticky-table-column__sticky">
+                  <input type="checkbox" id="uppercase" />
+                  <label for="uppercase">Uppercase</label>
+                </td>
+                <td class="sticky-table-column__sticky">
+                  <input type="checkbox" id="numbers" />
+                  <label for="numbers">Numbers</label>
+                </td>
+                <td class="sticky-table-column__sticky">
+                  <input type="checkbox" id="symbols" />
+                  <label for="symbols">Symbols</label>
+                </td>
+                <!-- Other columns ... -->
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
       <div class="card">
         <div class="card-header">
           <h2>Generate a Password</h2>
