@@ -18,11 +18,10 @@
             <thead>
               <tr>
                 <th class="sticky-table-column__sticky">Password Length</th>
-                <th class="sticky-table-column__sticky">Characters</th>
                 <th class="sticky-table-column__sticky">Lowercase</th>
                 <th class="sticky-table-column__sticky">Uppercase</th>
                 <th class="sticky-table-column__sticky">Numbers</th>
-                <th class="sticky-table-column__sticky">Symbols</th>
+                <th class="sticky-table-column__sticky">Special Characters</th>
                 <!-- Other header column ... -->
               </tr>
             </thead>
@@ -34,22 +33,21 @@
                     <p>Value: <span id="demo"></span></p>
                   </div>
                 </td>
-                <td class="sticky-table-column__sticky">...</td>
                 <td class="sticky-table-column__sticky">
-                  <input type="checkbox" id="lowercase" />
-                  <label for="lowercase">Lowercase</label>
+                  <input type="checkbox" id="includeLowerCase" />
+                  <label for="includeLowerCase">Lowercase</label>
                 </td>
                 <td class="sticky-table-column__sticky">
-                  <input type="checkbox" id="uppercase" />
-                  <label for="uppercase">Uppercase</label>
+                  <input type="checkbox" id="includeUpperCase" />
+                  <label for="includeUpperCase">Uppercase</label>
                 </td>
                 <td class="sticky-table-column__sticky">
-                  <input type="checkbox" id="numbers" />
-                  <label for="numbers">Numbers</label>
+                  <input type="checkbox" id="includeNumbers" />
+                  <label for="includeNumbers">Numbers</label>
                 </td>
                 <td class="sticky-table-column__sticky">
-                  <input type="checkbox" id="symbols" />
-                  <label for="symbols">Symbols</label>
+                  <input type="checkbox" id="includeSpecialChars" />
+                  <label for="includeSpecialChars">Special Characters</label>
                 </td>
                 <!-- Other columns ... -->
               </tr>
