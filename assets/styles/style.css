@@ -123,6 +123,7 @@ button[disabled] {
   border-spacing: 0;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   margin: 5% 0;
   font-size: 1.2rem;
@@ -136,15 +137,29 @@ button[disabled] {
   visibility: hidden;
 }
 
-table,
 th,
 td {
-  border: 1px solid black;
-  border-collapse: collapse;
+  padding: 10px;
+  border-bottom: 2px solid #9ca3af;
 }
 
 table {
   border-spacing: 15px;
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: center;
+  height: 70px;
+  vertical-align: middle;
+}
+
+td {
+  text-align: center;
+  height: 50px;
+  vertical-align: middle;
 }
 
 .sticky-table-headers__sticky {
@@ -168,6 +183,8 @@ table {
 
 .slider {
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   width: 100%;
   height: 25px;
   background: #d3d3d3;
@@ -207,6 +224,11 @@ table {
 
   #password {
     font-size: 1rem;
+  }
+
+  #optionsTable {
+    flex: 0 2 50%;
+    font-size: 0.8rem;
   }
 }
 
