@@ -54,6 +54,11 @@ var generatePassword = function (
     var alertMsg = document.querySelector(".alertMessage");
     alertMsg.setAttribute("style", "visibility:visible; color:white;");
 
+    setTimeout(function () {
+      let timeoutDiv = document.querySelector(".alertMessage");
+      timeoutDiv.remove();
+    }, 10000);
+
     return ""; // Returning an empty string as the password
   }
 
