@@ -122,10 +122,18 @@ button[disabled] {
   border-collapse: collapse;
   border-spacing: 0;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
   margin: 5% 0;
   font-size: 1.2rem;
+}
+
+.alertMessage {
+  background-color: red;
+  border-radius: 50px;
+  padding: 10px;
+  margin-bottom: 5px;
+  visibility: hidden;
 }
 
 table,

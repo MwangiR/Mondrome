@@ -40,6 +40,23 @@ var generatePassword = function (
     characters += "!@#$%^&*()_+{}[]~-";
   }
 
+  // Checking if no checkboxes are selected
+  if (characters.length === 0) {
+    // Showing an alert to the user
+    var alertDiv = document.createElement("div");
+
+    alertDiv.setAttribute("class", "alertMessage");
+    alertDiv.setAttribute("style", "visibility:hidden; background-color:red;");
+    alertDiv.textContent = "Please choose atleast one checkbox";
+    // Adding the alert to the DOM
+    document.getElementById("optionsTable").prepend(alertDiv);
+
+    var alertMsg = document.querySelector(".alertMessage");
+    alertMsg.setAttribute("style", "visibility:visible; color:white;");
+
+    return ""; // Returning an empty string as the password
+  }
+
   // Creating an empty variable to store the password
   var password = "";
 
