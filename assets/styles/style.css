@@ -162,6 +162,14 @@ td {
   vertical-align: middle;
 }
 
+.check:checked {
+  accent-color: green;
+}
+
+.check:checked ~ label {
+  color: green;
+}
+
 .sticky-table-headers__sticky {
   /* Background color */
   background-color: #9ca3af;
