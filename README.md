@@ -2,6 +2,10 @@
 
 This is a JavaScript function that generates a random password based on user preferences. The generated password can be used for enhanced security.
 
+## Link
+
+[Random Password Generator](https://mwangir.github.io/module3-Password-Generator/)
+
 ## Usage
 
 To use the password generator, follow these steps:
@@ -54,3 +58,8 @@ The code assumes the existence of HTML elements with the following IDs:
 - `includeSpecialChars`: The ID of the checkbox for including special characters.
 - `password`: The ID of the input field where the generated password is displayed.
 - `demo`: The ID of the element that displays the current value of the slider.
+
+## Screenshot
+
+![Random Password Generator](./assets/images/Password-Generator.png)
+![Random Password Generator](./assets/images/Password-Generator_1.png)
